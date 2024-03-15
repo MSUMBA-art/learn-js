@@ -64,9 +64,9 @@ let myStudents = 30;
 
 // ===== INCREMENT OPERATOR ====
 // myStudents++ this is plus 1
-// myStudents--  this is minus 1 
+// myStudents--  this is minus 1
 
-console.log(myStudents);
+// console.log(myStudents);
 
 /*operator precedence 
 parenthesis ()
@@ -75,6 +75,48 @@ multiplication & division & modulo
 addition & subtraction
 */
 // let result = 1 + 2 * 3 + 4 ** 2
-let result = 12 % 5 + 8 / 2;
+// let result = 12 % 5 + 8 / 2;
 
-console.log(result)
+// console.log(result)
+
+/* 
+HOW TO ACCEPT USER INPUT
+1. EASY WAY = WINDOW PROMPT
+2. PROFESSIONAL WAY = HTML TEXT-BOX
+*/
+
+// 1. EASY WAY = WINDOW PROMPT
+// let username;
+
+// username = window.prompt('What is your username?');
+// console.log(username);
+
+// 2. PROFESSIONAL WAY = HTML TEXT-BOX
+// let username;
+// document.getElementById('mySubmit').onclick = function() {
+//   username = document.getElementById('myText').value;
+//   document.getElementById('myH1').textContent = `Hello ${username}`;
+//   // console.log(username)
+// };
+
+/*
+type conversion = change the datatype of a value to another (string, number, boolean, etc")
+*/
+
+// let age = window.prompt("How old are you")
+// age = Number(age);
+// age+=1;
+
+//  console.log(age, typeof age);
+
+let x 
+let y 
+let z 
+
+x = Number(x);
+y = String(y)
+z = Boolean(z)
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
