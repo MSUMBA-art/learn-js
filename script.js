@@ -109,14 +109,27 @@ type conversion = change the datatype of a value to another (string, number, boo
 
 //  console.log(age, typeof age);
 
-let x 
-let y 
-let z 
+// let x
+// let y
+// let z
 
-x = Number(x);
-y = String(y)
-z = Boolean(z)
+// x = Number(x);
+// y = String(y)
+// z = Boolean(z)
 
-console.log(x, typeof x);
-console.log(y, typeof y);
-console.log(z, typeof z);
+// console.log(x, typeof x);
+// console.log(y, typeof y);
+// console.log(z, typeof z);
+
+// ===== CONST = a variable that cant be changed 
+const PI = 3.34159;
+let radius;
+let circumference;
+
+
+document.getElementById("mySubmit").onclick = function () {
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH3").textContent = circumference + "cm";
+}
