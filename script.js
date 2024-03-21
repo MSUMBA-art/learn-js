@@ -157,7 +157,7 @@ resetBtn.onclick = function () {
 };
 */
 
-// ======= MATH METHOD 
+// ======= MATH METHOD
 let x = 10;
 let y = 2;
 let z = 9;
@@ -172,3 +172,74 @@ let z = 9;
 // let max = Math.max(x, y, z)
 // let min = Math.min(x, y, z);
 // console.log(min);
+
+// ========= RANDOM NUMBER GENERATOR
+// example
+// const min = 50;
+// const max = 100;
+
+// let randomNum = Math.floor(Math.random() * (max - min)) + min;
+
+// console.log(randomNum);
+
+// exercise
+/*const myBtn = document.getElementById('myBtn');
+const label1 = document.getElementById('label1');
+const label2 = document.getElementById('label2');
+const label3 = document.getElementById('label3');
+const min = 1;
+const max = 6;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+
+myBtn.onclick = function () {
+  randomNum1 = Math.floor(Math.random() * max) + min;
+  randomNum2 = Math.floor(Math.random() * max) + min;
+  randomNum3 = Math.floor(Math.random() * max) + min;
+  label1.textContent = randomNum1;
+  label2.textContent = randomNum2;
+  label3.textContent = randomNum3;
+};
+*/
+
+// ======= IF STATEMENT
+// let age = 10;
+// if (age >= 18) {
+//   console.log('you are old enough')
+// }
+// else {
+//   console.log('you are too young')
+// }
+
+// let isStudent = true;
+// if (isStudent) {
+//   console.log(`You are a student`);
+// }
+
+// else {
+//   console.log(`you are not`);
+// }
+
+//
+
+const myText = document.getElementById('myText');
+const mySubmit = document.getElementById('mySubmit');
+const resultElement = document.getElementById('resultElement');
+let age;
+
+mySubmit.onclick = function () {
+  age = myText.value;
+  age = Number(age);
+  if (age >= 100) {
+    resultElement.textContent = 'You are TOO old to enter this site';
+  } else if (age == 0) {
+    resultElement.textContent = 'You cannot enter, you are just born';
+  } else if (age >= 18) {
+    resultElement.textContent = 'You are old enough to enter this site';
+  } else if (age < 0) {
+    resultElement.textContent = 'Your age cannot be below zero';
+  } else {
+    resultElement.textContent = 'You must be 18+ to enter this site';
+  }
+};
