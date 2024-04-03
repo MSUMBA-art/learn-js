@@ -1,7 +1,7 @@
-/* body {
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2em;
-} */
+  font-size: 1em;
+}
 
 /* ==== COUNTDOWN TIMER  */
 /* #countLabel {
@@ -56,7 +56,22 @@
 */
 
 /* ==== IF STATEMENT =====  */
- #resultElement {
+ /* #resultElement {
   font-size: 2em;
   color: blue;
+ } */
+
+ /* ========= CHECKED BOX PROPERTY ======  */
+
+ /* label {
+  font-size: 2em;
  }
+
+ #mySubmit {
+  font-size: 1em;
+ }
+
+ p {
+  color: rgb(242, 6, 18);
+  font-size: 2em;
+ } */

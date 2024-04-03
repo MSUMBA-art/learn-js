@@ -246,7 +246,7 @@ mySubmit.onclick = function () {
 */
 
 // ===== CHECKED BOX PROPERTY =======
-const myCheckbox = document.getElementById('myCheckbox');
+/*const myCheckbox = document.getElementById('myCheckbox');
 const visaBtn = document.getElementById('visaBtn');
 const mastercardBtn = document.getElementById('mastercardBtn');
 const payPalBtn = document.getElementById('payPalBtn');
@@ -274,4 +274,38 @@ mySubmit.onclick = function () {
   else {
     paymentResult.textContent = `You must select a payment type`
   }
-}
+}*/
+
+// ====== TERNARY OPERATOR its a shortcut to an if else statement ======
+// let age = 11;
+// let message = age >= 18 ? "You are an adult" : "You are a minor";
+// console.log(message);
+
+// THE ABOVE IS THE SAME AS BELOW
+
+// let age = 21;
+// let message;
+
+// if (age >= 18) {
+//   message = 'You are an adult';
+// } else {
+//   message = 'You are a minor';
+// }
+// console.log(message);
+
+// ====== exercise ======
+// let time = 16
+// let greeting = time <= 12 ? "Good morning" : "Good evening"
+// console.log(greeting);
+
+// let isStudent = false;
+// let message = isStudent ? "Yes I am a student" : " No , I am not a student"
+// console.log(message);
+
+let purchaseAmount = 1500;
+let discount = purchaseAmount >= 1000 ? 10 : 0;
+console.log(
+  `Your total discount is R${
+    purchaseAmount - purchaseAmount * (discount / 100)
+  }`
+);
