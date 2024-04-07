@@ -2,6 +2,8 @@
 // console.log(`Hello`);
 // console.log(`I like pizza`)
 
+// const { start } = require("live-server");
+
 // window.alert(`This is an alert`);
 // window.alert(`I like pizza`)
 
@@ -380,8 +382,19 @@ mySubmit.onclick = function () {
 //}
 // console.log(result);
 
-let phoneNumber = '082/765/765/876';
+// let phoneNumber = '082/765/765/876';
 // phoneNumber = phoneNumber.replaceAll("/", "-");
 // phoneNumber = phoneNumber.padStart(18, "0")
-phoneNumber = phoneNumber.padEnd(18, '0');
-console.log(phoneNumber);
+// phoneNumber = phoneNumber.padEnd(18, '0');
+// console.log(phoneNumber);
+
+// ===== STRING SLICING ===== 
+
+// string.slice(start, end) 
+const fullName = "Alexander Msumba";
+
+let firstName = fullName.slice(0, 9)
+let lastName = fullName.slice(9);
+
+console.log(firstName);
+console.log(lastName);
