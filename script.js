@@ -302,10 +302,86 @@ mySubmit.onclick = function () {
 // let message = isStudent ? "Yes I am a student" : " No , I am not a student"
 // console.log(message);
 
-let purchaseAmount = 1500;
-let discount = purchaseAmount >= 1000 ? 10 : 0;
-console.log(
-  `Your total discount is R${
-    purchaseAmount - purchaseAmount * (discount / 100)
-  }`
-);
+// let purchaseAmount = 1500;
+// let discount = purchaseAmount >= 1000 ? 10 : 0;
+// console.log(
+//   `Your total discount is R${
+//     purchaseAmount - purchaseAmount * (discount / 100)
+//   }`
+// );
+
+// ========= SWITCH ======
+
+// let day = 7;
+
+// switch (day) {
+//   case 1:
+//     console.log('It is Monday');
+//     break;
+//   case 2:
+//     console.log("It is Tuesday");
+//     break;
+//   case 3:
+//     console.log("It is Wednesday");
+//     break;
+//   case 4:
+//     console.log("It is Thursday");
+//     break;
+//   case 5:
+//     console.log("It is Friday");
+//     break;
+//   case 6:
+//     console.log("It is Saturday");
+//     break;
+//   case 7:
+//     console.log("It is Sunday");
+//     break;
+//   default:
+//     console.log(`${day} It is not a day`);
+// }
+
+// let testScore = 1;
+// let letterGrade;
+
+//  switch (true) {
+//    case testScore >= 90:
+//      letterGrade = 'A';
+//      break;
+//    case testScore >= 80:
+//      letterGrade = 'B';
+//      break;
+//    case testScore >= 70:
+//      letterGrade = 'C';
+//      break;
+//    case testScore >= 60:
+//      letterGrade = 'D';
+//      break;
+//    default:
+//      letterGrade = "f"
+//  }
+
+// console.log(letterGrade);
+
+// ======== STRING METHODS ======
+// let userName = 'Alexander';
+// console.log(userName.charAt(0))  // A
+// console.log(userName.indexOf('e')); // 2
+// console.log(userName.lastIndexOf('e')); // 7
+// console.log(userName.length); // 9
+// userName = userName.toUpperCase()
+// console.log(userName.toUpperCase( ));
+// userName = userName.repeat(2);
+// let result = userName.startsWith(' ');
+
+// if (result) {
+//   console.log("Your username can't start with ' '");
+// } else {
+//   console.log(userName);
+//}
+// console.log(result);
+
+let phoneNumber = '082/765/765/876';
+// phoneNumber = phoneNumber.replaceAll("/", "-");
+// phoneNumber = phoneNumber.padStart(18, "0")
+phoneNumber = phoneNumber.padEnd(18, '0');
+console.log(phoneNumber);
